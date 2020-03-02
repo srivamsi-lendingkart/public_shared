@@ -388,7 +388,7 @@ class Export_Data:
 
 if __name__=='__main__':
     # redshift_obj = RedshiftConnection()
-    # redshift_engine=redshift_obj.get_redshift_connector('prod', 'prod-nat.lendingkart.com', '5439', 'srivamsi', 'Srivamsi@123')
+    # redshift_engine=redshift_obj.get_redshift_connector(a,b,c,d)
     print('Connection Succesful')
     start_date_string='2019-09-01'
     start_date = (2019,9,1,0,0)
@@ -405,7 +405,7 @@ if __name__=='__main__':
 
     print('connecting to gsheets')
     credentials_path = 'credentials.json'
-    sheetId = '12f4Co5sklDfnmnFA89njxSB80pL7MclI9Ex6K1yvtoc'
+    sheetId = 'randomsheetId'
     export_obj = Export_Data()
     export_service = export_obj.create_sheet_service(credentials_path, sheetId)
 
